@@ -1,0 +1,2 @@
+source /Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/bootloader/gdbinit/symbols
+source /Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/bootloader/gdbinit/connect

@@ -1,0 +1,16 @@
+[wokwi]
+version = 1
+firmware = 'build/flasher_args.json'
+elf = 'build/Bluetooth-FM_Transmitter.elf'
+
+[[chip]]
+name = 'si4713'
+binary = 'wokwichips/si4713.chip.wasm'
+
+[[chip]]
+name = 'lm256-stepdown'
+binary = 'wokwichips/lm256-stepdown.chip.wasm'
+
+[[chip]]
+name = 'pcm5102a-dac'
+binary = 'wokwichips/pcm5102a-dac.chip.wasm'

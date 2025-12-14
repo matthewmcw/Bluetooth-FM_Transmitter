@@ -1,0 +1,111 @@
+{
+	"version": 1,
+	"author": "Anonymous maker",
+	"editor": "wokwi",
+	"parts": [
+		{
+			"type": "wokwi-breadboard-half",
+			"id": "bb1",
+			"top": -214.2,
+			"left": 79.6,
+			"rotate": 270,
+			"attrs": {}
+		},
+		{
+			"type": "board-esp32-devkit-c-v4",
+			"id": "esp",
+			"top": -153.6,
+			"left": 398.44,
+			"attrs": {}
+		},
+		{
+			"type": "wokwi-vcc",
+			"id": "vcc1",
+			"top": 77.56,
+			"left": 96,
+			"attrs": {}
+		},
+		{
+			"type": "chip-si4713",
+			"id": "chip1",
+			"top": -200.58,
+			"left": 542.4,
+			"attrs": {}
+		},
+		{
+			"type": "wokwi-gnd",
+			"id": "gnd1",
+			"top": 144,
+			"left": 95.4,
+			"attrs": {}
+		},
+		{
+			"type": "chip-lm256-stepdown",
+			"id": "chip2",
+			"top": 125.82,
+			"left": 187.2,
+			"attrs": {}
+		},
+		{
+			"type": "wokwi-pushbutton-6mm",
+			"id": "btn1",
+			"top": 122.6,
+			"left": 835.2,
+			"attrs": { "color": "green", "xray": "1" }
+		},
+		{
+			"type": "wokwi-pushbutton-6mm",
+			"id": "btn2",
+			"top": -59.8,
+			"left": 729.6,
+			"attrs": { "color": "green", "xray": "1" }
+		},
+		{
+			"type": "wokwi-pushbutton",
+			"id": "btn3",
+			"top": -233.8,
+			"left": 758.4,
+			"attrs": { "color": "green", "xray": "1" }
+		},
+		{
+			"type": "chip-pcm5102a-dac",
+			"id": "chip3",
+			"top": -307.2,
+			"left": 470.4,
+			"attrs": {}
+		}
+	],
+	"connections": [
+		["esp:TX", "$serialMonitor:RX", "", []],
+		["esp:RX", "$serialMonitor:TX", "", []],
+		["chip2:OUT+", "bb1:bp.1", "red", ["h30.61", "v-114.1"]],
+		["chip2:IN-", "gnd1:GND", "black", ["h0"]],
+		["chip2:OUT-", "bb1:bn.1", "black", ["h40.21", "v-115.2", "h0.4"]],
+		["bb1:bn.2", "esp:GND.1", "black", ["h47.6", "v-10.7"]],
+		["bb1:bp.2", "esp:5V", "red", ["v8.5", "h38.4", "v28.8"]],
+		["bb1:bn.3", "chip3:GND", "black", ["h28.4", "v-261.32"]],
+		["chip2:IN+", "vcc1:VCC", "red", ["h0"]],
+		["chip3:SCK", "bb1:bn.25", "black", ["h0"]],
+		["esp:27", "bb1:1b.j", "green", ["h-9.45", "v115.2", "h-96.9"]],
+		["esp:26", "bb1:2b.j", "green", ["h-19.05", "v115.2", "h-77.1", "v-58.1"]],
+		["esp:25", "bb1:3b.j", "green", ["h-28.65", "v115.2", "h-57.6", "v-58.1"]],
+		["chip3:LCK", "bb1:1b.f", "green", ["h0"]],
+		["chip3:DIN", "bb1:2b.g", "green", ["h0"]],
+		["chip3:BCK", "bb1:3b.h", "green", ["h0"]],
+		["chip3:LOUT", "chip1:LIN", "white", ["h73.81", "v106.62"]],
+		["chip3:ROUT", "chip1:RIN", "blue", ["h93.01", "v97.02"]],
+		["esp:GND.2", "bb1:tn.1", "black", ["h19.2", "v240", "h-355.2", "v-94.9"]],
+		["chip3:AGND", "bb1:tn.25", "black", ["h54.61", "v-56.58", "h-471.2"]],
+		[
+			"chip1:GND",
+			"bb1:tn.24",
+			"black",
+			["h49.81", "v-192", "h-531.62", "v106.7"]
+		],
+		["chip3:VIN", "esp:3V3", "red", ["h-81.6", "v49.02"]],
+		["chip1:Vin", "chip3:ASV3", "red", ["h30.61", "v-87.42"]],
+		["esp:22", "chip1:SCL", "green", ["h9.6", "v-67.2"]],
+		["esp:21", "chip1:SDA", "green", ["h28.8", "v-86.4"]]
+	],
+	"dependencies": {}
+}

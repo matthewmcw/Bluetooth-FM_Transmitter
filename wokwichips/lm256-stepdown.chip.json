@@ -1,0 +1,11 @@
+{
+  "name": "lm256-stepdown",
+  "author": "",
+  "pins": [
+    "IN+",
+    "IN-",
+    "OUT-",
+    "OUT+"
+  ],
+  "controls": []
+}

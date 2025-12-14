@@ -1,0 +1,22 @@
+{
+  "name": "pcm5102a-dac",
+  "author": "",
+  "pins": [
+ "SCK",
+ "BCK",
+ "DIN",
+ "LCK",
+ "GND",
+ "VIN",
+ "FLT",
+ "DEMP",
+ "XSMT",
+ "FMT",
+ "ASV3",
+ "AGND",
+ "ROUT",
+ "AGND",
+ "LOUT"
+   ],
+  "controls": []
+}
