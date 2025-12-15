@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "Bluetooth-FM_Transmitter",
-    "project_version":    "1",
+    "project_version":    "5d4ad28-dirty",
     "project_path":       "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter",
     "idf_path":           "/Users/matt/esp/v5.5.1/esp-idf",
     "build_dir":          "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "c_compiler":         "/Users/matt/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/Users/matt/esp/v5.5.1/esp-idf/components/driver/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_dac/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2c/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2s/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ledc/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_parlio/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_rmt/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_spi/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_tsens/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_twai/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/hal/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/heap/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/log/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/soc/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS" : "/Users/matt/esp/v5.5.1/esp-idf/components/bt/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/driver/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_coex/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_dac/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2c/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2s/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ledc/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_parlio/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_rmt/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_spi/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_tsens/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_twai/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_event/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/hal/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/heap/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/log/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/lwip/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/soc/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig;/Users/matt/esp/v5.5.1/esp-idf/components/vfs/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader/Kconfig.projbuild;/Users/matt/esp/v5.5.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/matt/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/matt/esp/v5.5.1/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/matt/esp/v5.5.1/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/Users/matt/esp/v5.5.1/esp-idf/components/app_update", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support", "/Users/matt/esp/v5.5.1/esp-idf/components/cxx", "/Users/matt/esp/v5.5.1/esp-idf/components/driver", "/Users/matt/esp/v5.5.1/esp-idf/components/efuse", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_app_format", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_common", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_hw_support", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_partition", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_pm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_rom", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_security", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_system", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer", "/Users/matt/esp/v5.5.1/esp-idf/components/esptool_py", "/Users/matt/esp/v5.5.1/esp-idf/components/freertos", "/Users/matt/esp/v5.5.1/esp-idf/components/hal", "/Users/matt/esp/v5.5.1/esp-idf/components/heap", "/Users/matt/esp/v5.5.1/esp-idf/components/log", "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/main", "/Users/matt/esp/v5.5.1/esp-idf/components/mbedtls", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib", "/Users/matt/esp/v5.5.1/esp-idf/components/partition_table", "/Users/matt/esp/v5.5.1/esp-idf/components/pthread", "/Users/matt/esp/v5.5.1/esp-idf/components/sdmmc", "/Users/matt/esp/v5.5.1/esp-idf/components/soc", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash", "/Users/matt/esp/v5.5.1/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "bt", "cxx", "driver", "efuse", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_gdbstub", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "hal", "heap", "log", "lwip", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "vfs", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/Users/matt/esp/v5.5.1/esp-idf/components/app_update", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support", "/Users/matt/esp/v5.5.1/esp-idf/components/bt", "/Users/matt/esp/v5.5.1/esp-idf/components/cxx", "/Users/matt/esp/v5.5.1/esp-idf/components/driver", "/Users/matt/esp/v5.5.1/esp-idf/components/efuse", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_app_format", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_coex", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_common", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_event", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_hw_support", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_partition", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_pm", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_rom", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_security", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_system", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi", "/Users/matt/esp/v5.5.1/esp-idf/components/esptool_py", "/Users/matt/esp/v5.5.1/esp-idf/components/freertos", "/Users/matt/esp/v5.5.1/esp-idf/components/hal", "/Users/matt/esp/v5.5.1/esp-idf/components/heap", "/Users/matt/esp/v5.5.1/esp-idf/components/log", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip", "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/main", "/Users/matt/esp/v5.5.1/esp-idf/components/mbedtls", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash", "/Users/matt/esp/v5.5.1/esp-idf/components/partition_table", "/Users/matt/esp/v5.5.1/esp-idf/components/pthread", "/Users/matt/esp/v5.5.1/esp-idf/components/sdmmc", "/Users/matt/esp/v5.5.1/esp-idf/components/soc", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash", "/Users/matt/esp/v5.5.1/esp-idf/components/vfs", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/Users/matt/esp/v5.5.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -72,6 +72,21 @@
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/bootloader_support/libbootloader_support.a",
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_random.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/secure_boot.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_partitions.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/esp_image_format.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_sha.c", "/Users/matt/esp/v5.5.1/esp-idf/components/bootloader_support/src/esp32/secure_boot_secure_features.c" ],
             "include_dirs": [ "include", "bootloader_flash/include" ]
+        },
+        "bt": {
+            "alias": "idf::bt",
+            "target": "___idf_bt",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/bt",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_bt",
+            "reqs": [ "esp_timer", "esp_wifi" ],
+            "priv_reqs": [ "nvs_flash", "soc", "esp_pm", "esp_phy", "esp_coex", "mbedtls", "esp_driver_uart", "vfs", "esp_ringbuf", "esp_driver_spi", "esp_driver_gpio", "esp_gdbstub" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
         },
         "cxx": {
             "alias": "idf::cxx",
@@ -146,6 +161,21 @@
             "managed_priv_reqs": [],
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_coex": {
+            "alias": "idf::esp_coex",
+            "target": "___idf_esp_coex",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_coex",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_coex",
+            "reqs": [],
+            "priv_reqs": [ "esp_timer", "esp_driver_gpio" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_coex/libesp_coex.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_coex/esp32/esp_coex_adapter.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_coex/src/coexist_debug_diagram.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_coex/src/coexist_debug.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_common": {
@@ -460,7 +490,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
-            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_wakeup.c" ],
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_usb_serial_jtag": {
@@ -476,6 +506,36 @@
             "managed_priv_reqs": [],
             "file": "",
             "sources": [],
+            "include_dirs": [ "include" ]
+        },
+        "esp_event": {
+            "alias": "idf::esp_event",
+            "target": "___idf_esp_event",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_event",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_event",
+            "reqs": [ "log", "esp_common", "freertos" ],
+            "priv_reqs": [ "esp_timer" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_event/libesp_event.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_event/default_event_loop.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_event/esp_event.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_event/esp_event_private.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_gdbstub": {
+            "alias": "idf::esp_gdbstub",
+            "target": "___idf_esp_gdbstub",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_gdbstub",
+            "reqs": [ "freertos" ],
+            "priv_reqs": [ "soc", "esp_rom", "esp_system" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_gdbstub/libesp_gdbstub.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/src/gdbstub.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/src/packet.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub_xtensa.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub-entry.S", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_gdbstub/src/port/xtensa/xt_debugexception.S" ],
             "include_dirs": [ "include" ]
         },
         "esp_hw_support": {
@@ -508,6 +568,36 @@
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/esp_mmu_map.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/port/esp32/ext_mem_layout.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/esp_cache_msync.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/esp_cache_utils.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/cache_esp32.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_mm/heap_align_hw.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_netif": {
+            "alias": "idf::esp_netif",
+            "target": "___idf_esp_netif",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_netif",
+            "reqs": [ "esp_event" ],
+            "priv_reqs": [ "esp_netif_stack" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_netif/libesp_netif.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/esp_netif_handlers.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/esp_netif_objects.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/esp_netif_defaults.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/lwip/esp_netif_sntp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/lwip/esp_netif_lwip_defaults.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/lwip/netif/wlanif.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/lwip/netif/ethernetif.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_netif_stack": {
+            "alias": "idf::esp_netif_stack",
+            "target": "___idf_esp_netif_stack",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_netif_stack",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_netif_stack",
+            "reqs": [ "lwip" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": []
+        },
         "esp_partition": {
             "alias": "idf::esp_partition",
             "target": "___idf_esp_partition",
@@ -522,6 +612,21 @@
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_partition/libesp_partition.a",
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_partition/partition.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_partition/partition_target.c" ],
             "include_dirs": [ "include" ]
+        },
+        "esp_phy": {
+            "alias": "idf::esp_phy",
+            "target": "___idf_esp_phy",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_phy",
+            "reqs": [],
+            "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "efuse", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_phy/libesp_phy.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/src/phy_override.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/src/lib_printf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/src/phy_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/src/phy_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/esp32/phy_init_data.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_phy/src/btbb_init.c" ],
+            "include_dirs": [ "include", "esp32/include" ]
         },
         "esp_pm": {
             "alias": "idf::esp_pm",
@@ -613,6 +718,36 @@
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/src/system_time.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_impl_lac.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_vfs_console": {
+            "alias": "idf::esp_vfs_console",
+            "target": "___idf_esp_vfs_console",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_vfs_console",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_vfs_console",
+            "reqs": [],
+            "priv_reqs": [ "vfs", "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_wifi": {
+            "alias": "idf::esp_wifi",
+            "target": "___idf_esp_wifi",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_wifi",
+            "reqs": [ "esp_event", "esp_phy", "esp_netif" ],
+            "priv_reqs": [ "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/esp_wifi/libesp_wifi.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/lib_printf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/mesh_event.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/smartconfig.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_default.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_netif.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/esp32/esp_adapter.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/regulatory/esp_wifi_regulatory.c", "/Users/matt/esp/v5.5.1/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
+            "include_dirs": [ "include", "include/local", "wifi_apps/include", "wifi_apps/nan_app/include" ]
+        },
         "esptool_py": {
             "alias": "idf::esptool_py",
             "target": "___idf_esptool_py",
@@ -688,6 +823,21 @@
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/os/log_timestamp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_timestamp_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/os/log_lock.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/buffer/log_buffers.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/os/util.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/util.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_format_text.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_print.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/os/log_write.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_level/log_level.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_level/tag_log_level/tag_log_level.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "/Users/matt/esp/v5.5.1/esp-idf/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
             "include_dirs": [ "include" ]
         },
+        "lwip": {
+            "alias": "idf::lwip",
+            "target": "___idf_lwip",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/lwip",
+            "type": "LIBRARY",
+            "lib": "__idf_lwip",
+            "reqs": [],
+            "priv_reqs": [ "vfs" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/lwip/liblwip.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/apps/sntp/sntp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/api_lib.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/api_msg.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/err.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/if_api.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/netbuf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/netdb.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/netifapi.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/sockets.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/tcpip.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/apps/sntp/sntp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/apps/netbiosns/netbiosns.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/def.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/dns.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/inet_chksum.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ip.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/mem.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/memp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/netif.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/pbuf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/raw.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/stats.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/sys.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/tcp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/tcp_in.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/tcp_out.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/timeouts.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/udp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/autoip.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/dhcp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/etharp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/icmp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/igmp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_napt.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_addr.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_frag.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/dhcp6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ethip6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/icmp6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/inet6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ip6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_addr.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_frag.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/mld6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/nd6.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ethernet.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/bridgeif.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/bridgeif_fdb.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/slipif.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/auth.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ccp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/chap-md5.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/chap-new.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/chap_ms.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/demand.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/eap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ecp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/eui64.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/fsm.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ipcp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ipv6cp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/lcp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/magic.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/mppe.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/multilink.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ppp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppapi.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppcrypt.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppoe.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppol2tp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppos.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/upap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/utils.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/vj.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/hooks/tcp_isn_default.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/hooks/lwip_default_hooks.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/debug/lwip_debug.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/sockets_ext.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/freertos/sys_arch.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/if_index.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/acd_dhcp_check.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/port/esp32xx/vfs_lwip.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/apps/ping/esp_ping.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/apps/ping/ping.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/apps/ping/ping_sock.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/arc4.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/des.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md4.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md5.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/sha1.c", "/Users/matt/esp/v5.5.1/esp-idf/components/lwip/apps/dhcpserver/dhcpserver.c" ],
+            "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch", "port/esp32xx/include/sys" ]
+        },
         "main": {
             "alias": "idf::main",
             "target": "___idf_main",
@@ -696,12 +846,12 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "driver" ],
+            "priv_reqs": [ "spi_flash", "driver", "nvs_flash", "bt" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/main/libmain.a",
             "sources": [ "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/main/hello_world_main.cpp" ],
-            "include_dirs": [ "Libs" ]
+            "include_dirs": [ "." ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -732,6 +882,21 @@
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/newlib/libnewlib.a",
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/abort.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/assert.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/heap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/locks.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/poll.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/pthread.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/random.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/getentropy.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/termios.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/stdatomic.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/time.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/sysconf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/realpath.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/scandir.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/syscalls.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/reent_syscalls.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/port/esp_time_impl.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/flockfile.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/reent_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/newlib_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/newlib/src/port/esp_time_impl.c" ],
             "include_dirs": [ "platform_include" ]
+        },
+        "nvs_flash": {
+            "alias": "idf::nvs_flash",
+            "target": "___idf_nvs_flash",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash",
+            "type": "LIBRARY",
+            "lib": "__idf_nvs_flash",
+            "reqs": [ "esp_partition" ],
+            "priv_reqs": [ "spi_flash", "newlib" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/nvs_flash/libnvs_flash.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_types.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_platform.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_bootloader.c", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_encrypted_partition.cpp", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_bootloader_aes.c", "/Users/matt/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_bootloader_xts_aes.c" ],
+            "include_dirs": [ "include" ]
         },
         "partition_table": {
             "alias": "idf::partition_table",
@@ -807,6 +972,36 @@
             "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/flash_brownout_hook.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/memspi_host_driver.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/cache_utils.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/flash_mmap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/flash_ops.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_wrap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_api.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/Users/matt/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
+        },
+        "vfs": {
+            "alias": "idf::vfs",
+            "target": "___idf_vfs",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/vfs",
+            "type": "LIBRARY",
+            "lib": "__idf_vfs",
+            "reqs": [],
+            "priv_reqs": [ "esp_timer", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_vfs_console" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/vfs/libvfs.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/vfs/vfs.c", "/Users/matt/esp/v5.5.1/esp-idf/components/vfs/vfs_eventfd.c", "/Users/matt/esp/v5.5.1/esp-idf/components/vfs/vfs_semihost.c", "/Users/matt/esp/v5.5.1/esp-idf/components/vfs/nullfs.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "wpa_supplicant": {
+            "alias": "idf::wpa_supplicant",
+            "target": "___idf_wpa_supplicant",
+            "prefix": "idf",
+            "dir": "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant",
+            "type": "LIBRARY",
+            "lib": "__idf_wpa_supplicant",
+            "reqs": [],
+            "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
+            "sources": [ "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/port/eloop.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/sae.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/json.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/Users/matt/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
+            "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
         },
         "xtensa": {
             "alias": "idf::xtensa",
@@ -1795,7 +1990,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch", "port/esp32xx/include/sys" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2128,10 +2323,10 @@
             "dir": "/Users/matt/mmcodingproj/Bluetooth-FM_Transmitter/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "driver" ],
+            "priv_reqs": [ "spi_flash", "driver", "nvs_flash", "bt" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "Libs" ]
+            "include_dirs": [ "." ]
         }
     },
     "debug_prefix_map_gdbinit": "",
